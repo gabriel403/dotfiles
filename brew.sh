@@ -94,6 +94,7 @@ brew install vbindiff
 brew install zopfli
 
 # cask stuff
+brew cask install java
 brew cask install github-desktop
 brew cask install dropbox
 brew cask install transmit
