@@ -105,6 +105,7 @@ brew cask install spotify
 brew cask install docker
 brew cask install discord
 brew cask install gimp
+brew cask install iterm2
 
 # Remove outdated versions from the cellar.
 brew cleanup
