@@ -95,7 +95,7 @@ brew install zopfli
 
 # cask stuff
 brew cask install java
-brew cask install github-desktop
+brew cask install github
 brew cask install dropbox
 brew cask install transmit
 brew cask install slack
