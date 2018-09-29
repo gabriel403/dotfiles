@@ -104,10 +104,16 @@ brew cask install sequel-pro
 brew cask install caffeine
 brew cask install istat-menus
 brew cask install spotify
-brew cask install docker
+brew cask install docker-edge
 brew cask install discord
 brew cask install gimp
 brew cask install iterm2
+brew cask install whatsapp
+brew cask install postman
+brew cask install visual-studio-code
+brew cask install zoomus
+brew cask install postico
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
