@@ -97,6 +97,7 @@ brew install vbindiff
 brew install zopfli
 
 # cask stuff
+brew tap homebrew/cask-versions
 brew cask install java
 brew cask install github
 brew cask install dropbox
@@ -115,6 +116,7 @@ brew cask install postman
 brew cask install visual-studio-code
 brew cask install zoomus
 brew cask install postico
+brew cask install google-chrome
 
 
 # Remove outdated versions from the cellar.
