@@ -100,10 +100,10 @@ brew install gs
 
 # cask stuff
 brew tap homebrew/cask-versions
-brew cask install java
+# brew cask install java
 brew cask install github
 brew cask install dropbox
-brew cask install transmit
+# brew cask install transmit
 brew cask install slack
 brew cask install sequel-pro
 brew cask install caffeine
@@ -120,6 +120,9 @@ brew cask install zoomus
 brew cask install postico
 brew cask install google-chrome
 brew cask install bartender
+brew cask install insomnia
+brew cask install rectangle
+brew install thefuck
 
 
 # Remove outdated versions from the cellar.
