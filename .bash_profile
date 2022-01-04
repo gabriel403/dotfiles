@@ -1,6 +1,14 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
+#export NVM_DIR="$HOME/.nvm"
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
+[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+export PATH=$PATH:/Users/{whois}/Library/Android/sdk/platform-tools
+export PATH=$PATH:/Users/{whois}/Library/Android/sdk/tools
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export ANDROID_HOME=/Users/{whois}/Library/Android/sdk
 
+eval "$(thefuck --alias)"
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -8,6 +16,35 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+find-up() {
+  path=$(pwd)
+  while [[ "$path" != "" && ! -e "$path/$1" ]]; do
+    path=${path%/*}
+  done
+  echo "$path"
+}
+
+automatic-nvm-use() {
+  NVM_PATH=$(find-up .nvmrc | tr -d '[:space:]')
+
+  if [[ $NVM_PATH == $NVM_PATH_WAS ]]; then
+    return
+  fi
+
+  NVM_PATH_WAS=$NVM_PATH
+
+  if [[ -f "$NVM_PATH/.nvmrc" ]]; then
+    nvm use $(<"$NVM_PATH/.nvmrc")
+  else
+    nvm use default
+  fi
+}
+
+if [[ "$PROMPT_COMMAND" ]]; then
+  export PROMPT_COMMAND="$PROMPT_COMMAND;automatic-nvm-use"
+else
+  export PROMPT_COMMAND=automatic-nvm-use
+fi
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;

@@ -16,6 +16,8 @@ BREW_PREFIX=$(brew --prefix)
 brew install coreutils
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
+# Install some other useful utilities like `diff`.
+brew install diffutils
 # Install some other useful utilities like `sponge`.
 brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
@@ -100,30 +102,35 @@ brew install gs
 
 # cask stuff
 brew tap homebrew/cask-versions
-# brew cask install java
-brew cask install github
-brew cask install dropbox
-# brew cask install transmit
-brew cask install slack
-brew cask install sequel-pro
-brew cask install caffeine
-brew cask install istat-menus
-brew cask install spotify
-brew cask install docker-edge
-brew cask install discord
-brew cask install gimp
-brew cask install iterm2
-brew cask install whatsapp
-brew cask install postman
-brew cask install visual-studio-code
-brew cask install zoomus
-brew cask install postico
-brew cask install google-chrome
-brew cask install bartender
-brew cask install insomnia
-brew cask install rectangle
+# brew install --cask java
+brew install --cask github
+brew install --cask dropbox
+# brew install --cask transmit
+brew install --cask slack
+brew install --cask sequel-pro
+brew install --cask caffeine
+brew install --cask istat-menus
+brew install --cask spotify
+brew install --cask docker-edge
+brew install --cask discord
+brew install --cask gimp
+brew install --cask iterm2
+brew install --cask whatsapp
+brew install --cask postman
+brew install --cask visual-studio-code
+brew install --cask zoomus
+brew install --cask postico
+brew install --cask google-chrome
+brew install --cask bartender
+brew install --cask insomnia
+brew install --cask rectangle
 brew install thefuck
+brew install 1password
 
+brew install yarn
+brew install nvm
+brew tap aws/tap
+brew install aws-sam-cli
 
 # Remove outdated versions from the cellar.
 brew cleanup
