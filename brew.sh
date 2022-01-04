@@ -118,12 +118,15 @@ brew install --cask iterm2
 brew install --cask whatsapp
 brew install --cask postman
 brew install --cask visual-studio-code
-brew install --cask zoomus
+brew install --cask zoom
 brew install --cask postico
 brew install --cask google-chrome
+brew install --cask google-chrome-beta
 brew install --cask bartender
 brew install --cask insomnia
 brew install --cask rectangle
+brew install --cask skype
+brew install --cask microsoft-teams
 brew install thefuck
 brew install 1password
 
