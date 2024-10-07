@@ -3,10 +3,6 @@ export PATH="$HOME/bin:$PATH";
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
 [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
-export PATH=$PATH:/Users/{whois}/Library/Android/sdk/platform-tools
-export PATH=$PATH:/Users/{whois}/Library/Android/sdk/tools
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export ANDROID_HOME=/Users/{whois}/Library/Android/sdk
 
 eval "$(thefuck --alias)"
 # Load the shell dotfiles, and then some:
