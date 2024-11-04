@@ -101,32 +101,32 @@ brew install gs
 # brew install zopfli
 
 # cask stuff
-brew tap homebrew/cask-versions
-# brew install --cask java
-brew install --cask github
-brew install --cask dropbox
-# brew install --cask transmit
-brew install --cask slack
-brew install --cask sequel-pro
-brew install --cask caffeine
-brew install --cask istat-menus
-brew install --cask spotify
-brew install --cask docker-edge
-brew install --cask discord
-brew install --cask gimp
-brew install --cask iterm2
-brew install --cask whatsapp
-brew install --cask postman
-brew install --cask visual-studio-code
-brew install --cask zoom
-brew install --cask postico
-brew install --cask google-chrome
-brew install --cask google-chrome-beta
-brew install --cask bartender
-brew install --cask insomnia
-brew install --cask rectangle
-brew install --cask skype
-brew install --cask microsoft-teams
+# brew tap homebrew/cask-versions
+# brew install java
+brew install github
+brew install dropbox
+# brew install transmit
+brew install slack
+brew install sequel-pro
+brew install caffeine
+brew install istat-menus
+brew install spotify
+brew install docker-edge
+brew install discord
+brew install gimp
+brew install iterm2
+brew install whatsapp
+brew install postman
+brew install visual-studio-code
+brew install zoom
+brew install postico
+brew install google-chrome
+brew install google-chrome-beta
+brew install bartender
+brew install insomnia
+brew install rectangle
+brew install skype
+brew install microsoft-teams
 brew install thefuck
 brew install 1password
 
