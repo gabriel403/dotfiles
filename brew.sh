@@ -37,103 +37,38 @@ fi;
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install GnuPG to enable PGP-signing commits.
-brew install gnupg
 
 # Install more recent versions of some macOS tools.
-# brew install vim --with-override-system-vi
 brew install grep
-brew install openssh
-brew install screen
-# brew install php
-# brew install gmp
-
-# Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
-
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-# brew cask install java
-# brew install aircrack-ng
-# brew install bfg
-# brew install binutils
-# brew install binwalk
-# brew install cifer
-# brew install dex2jar
-# brew install dns2tcp
-# brew install fcrackzip
-# brew install foremost
-# brew install hashpump
-# brew install hydra
-# brew install john
-# brew install knock
-# brew install netpbm
-# brew install nmap
-# brew install pngcheck
-# brew install socat
-# brew install sqlmap
-# brew install tcpflow
-# brew install tcpreplay
-# brew install tcptrace
-# brew install ucspi-tcp # `tcpserver` etc.
-# brew install xpdf
-# brew install xz
 
 # Install other useful binaries.
-# brew install ack
-#brew install exiv2
 brew install git
-brew install git-lfs
-brew install gs
-# brew install imagemagick --with-webp
-# brew install lua
-# brew install lynx
-# brew install p7zip
-# brew install pigz
-# brew install pv
-# brew install rename
-# brew install rlwrap
-# brew install ssh-copy-id
-# brew install tree
-# brew install vbindiff
-# brew install zopfli
 
-# cask stuff
-# brew tap homebrew/cask-versions
-# brew install java
-brew install github
-brew install dropbox
-# brew install transmit
-brew install slack
-brew install sequel-pro
-brew install caffeine
-brew install istat-menus
-brew install spotify
-brew install docker-edge
-brew install discord
-brew install gimp
-brew install iterm2
-brew install whatsapp
-brew install postman
-brew install visual-studio-code
-brew install zoom
-brew install postico
-brew install google-chrome
-brew install google-chrome-beta
-brew install bartender
-brew install insomnia
-brew install rectangle
-brew install skype
-brew install microsoft-teams
+brew install --cask github
+brew install --cask slack
+brew install --cask sequel-ace
+brew install --cask caffeine
+brew install --cask istat-menus
+brew install --cask spotify
+brew install --cask iterm2
+brew install --cask whatsapp
+brew install --cask postman
+brew install --cask visual-studio-code
+brew install --cask zoom
+brew install --cask google-chrome
+brew install --cask bartender
+brew install --cask insomnia
+brew install --cask rectangle
+brew install --cask microsoft-teams
 brew install thefuck
-brew install 1password
 
 brew install yarn
 brew install nvm
-brew tap aws/tap
-brew install aws-sam-cli
+
+brew install --cask daisydisk
+brew install --cask mysqlworkbench
+# brew tap aws/tap
+# brew install aws-sam-cli
 
 # Remove outdated versions from the cellar.
 brew cleanup
